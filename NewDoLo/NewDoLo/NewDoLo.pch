@@ -1,0 +1,17 @@
+//
+//  NewDoLo.pch
+//  NewDoLo
+//
+//  Created by 李志强 on 16/4/12.
+//  Copyright © 2016年 男孩无衣. All rights reserved.
+//
+
+#ifndef NewDoLo_pch
+#define NewDoLo_pch
+
+#import "APPHeader.h"
+#import "KEYHeader.h"
+#import "THRHeader.h"
+#import "URLHeader.h"
+
+#endif /* NewDoLo_pch */

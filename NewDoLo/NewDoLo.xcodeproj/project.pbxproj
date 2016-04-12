@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		823F61EC1CBD30C900EBAE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F61EB1CBD30C900EBAE2A /* main.m */; };
+		823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F61CBD30C900EBAE2A /* Assets.xcassets */; };
+		823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */; };
+		823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F62041CBD313D00EBAE2A /* AppDelegate.m */; };
+		823F62151CBD318A00EBAE2A /* CustomTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F62141CBD318A00EBAE2A /* CustomTabBarVC.m */; };
+		823F62181CBD31CE00EBAE2A /* DotaPlayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F62171CBD31CE00EBAE2A /* DotaPlayerListViewController.m */; };
+		823F621B1CBD31DA00EBAE2A /* LOLPlayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F621A1CBD31DA00EBAE2A /* LOLPlayerListViewController.m */; };
+		823F621E1CBD31E900EBAE2A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F621D1CBD31E900EBAE2A /* SettingViewController.m */; };
+		823F623A1CBD35AB00EBAE2A /* tabbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62211CBD35AB00EBAE2A /* tabbar_background.png */; };
+		823F623D1CBD35AB00EBAE2A /* tabbar_button_centeradd.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62241CBD35AB00EBAE2A /* tabbar_button_centeradd.png */; };
+		823F62441CBD35AB00EBAE2A /* AppIcon29x29~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F622C1CBD35AB00EBAE2A /* AppIcon29x29~ipad.png */; };
+		823F62451CBD35AB00EBAE2A /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F622D1CBD35AB00EBAE2A /* AppIcon57x57.png */; };
+		823F62461CBD35AB00EBAE2A /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F622E1CBD35AB00EBAE2A /* AppIcon57x57@2x.png */; };
+		823F62471CBD35AB00EBAE2A /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F622F1CBD35AB00EBAE2A /* AppIcon60x60@2x.png */; };
+		823F62481CBD35AB00EBAE2A /* AppIcon72x72~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62301CBD35AB00EBAE2A /* AppIcon72x72~ipad.png */; };
+		823F62491CBD35AB00EBAE2A /* campus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62311CBD35AB00EBAE2A /* campus@2x.png */; };
+		823F624A1CBD35AB00EBAE2A /* date@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62321CBD35AB00EBAE2A /* date@2x.png */; };
+		823F624B1CBD35AB00EBAE2A /* denglu06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62331CBD35AB00EBAE2A /* denglu06@2x.png */; };
+		823F624C1CBD35AB00EBAE2A /* kind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62341CBD35AB00EBAE2A /* kind@2x.png */; };
+		823F624D1CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62351CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png */; };
+		823F624E1CBD35AB00EBAE2A /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62361CBD35AB00EBAE2A /* LaunchImage-700@2x.png */; };
+		823F624F1CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62371CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png */; };
+		823F62501CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62381CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png */; };
+		823F62511CBD35AB00EBAE2A /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 823F62391CBD35AB00EBAE2A /* location@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		823F61E71CBD30C900EBAE2A /* NewDoLo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDoLo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		823F61EB1CBD30C900EBAE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		823F61F61CBD30C900EBAE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		823F61F91CBD30C900EBAE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		823F61FB1CBD30C900EBAE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823F62031CBD313D00EBAE2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		823F62041CBD313D00EBAE2A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		823F620C1CBD313D00EBAE2A /* APPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHeader.h; sourceTree = "<group>"; };
+		823F620D1CBD313D00EBAE2A /* KEYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEYHeader.h; sourceTree = "<group>"; };
+		823F620E1CBD313D00EBAE2A /* THRHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRHeader.h; sourceTree = "<group>"; };
+		823F620F1CBD313D00EBAE2A /* URLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; };
+		823F62131CBD318A00EBAE2A /* CustomTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarVC.h; sourceTree = "<group>"; };
+		823F62141CBD318A00EBAE2A /* CustomTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarVC.m; sourceTree = "<group>"; };
+		823F62161CBD31CE00EBAE2A /* DotaPlayerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotaPlayerListViewController.h; sourceTree = "<group>"; };
+		823F62171CBD31CE00EBAE2A /* DotaPlayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotaPlayerListViewController.m; sourceTree = "<group>"; };
+		823F62191CBD31DA00EBAE2A /* LOLPlayerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLPlayerListViewController.h; sourceTree = "<group>"; };
+		823F621A1CBD31DA00EBAE2A /* LOLPlayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLPlayerListViewController.m; sourceTree = "<group>"; };
+		823F621C1CBD31E900EBAE2A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		823F621D1CBD31E900EBAE2A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		823F621F1CBD320900EBAE2A /* NewDoLo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewDoLo.pch; sourceTree = "<group>"; };
+		823F62211CBD35AB00EBAE2A /* tabbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_background.png; sourceTree = "<group>"; };
+		823F62241CBD35AB00EBAE2A /* tabbar_button_centeradd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_button_centeradd.png; sourceTree = "<group>"; };
+		823F622C1CBD35AB00EBAE2A /* AppIcon29x29~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29~ipad.png"; sourceTree = "<group>"; };
+		823F622D1CBD35AB00EBAE2A /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
+		823F622E1CBD35AB00EBAE2A /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		823F622F1CBD35AB00EBAE2A /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		823F62301CBD35AB00EBAE2A /* AppIcon72x72~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72~ipad.png"; sourceTree = "<group>"; };
+		823F62311CBD35AB00EBAE2A /* campus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "campus@2x.png"; sourceTree = "<group>"; };
+		823F62321CBD35AB00EBAE2A /* date@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date@2x.png"; sourceTree = "<group>"; };
+		823F62331CBD35AB00EBAE2A /* denglu06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "denglu06@2x.png"; sourceTree = "<group>"; };
+		823F62341CBD35AB00EBAE2A /* kind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kind@2x.png"; sourceTree = "<group>"; };
+		823F62351CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		823F62361CBD35AB00EBAE2A /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		823F62371CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		823F62381CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		823F62391CBD35AB00EBAE2A /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		823F61E41CBD30C900EBAE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		823F61DE1CBD30C900EBAE2A = {
+			isa = PBXGroup;
+			children = (
+				823F61E91CBD30C900EBAE2A /* NewDoLo */,
+				823F61E81CBD30C900EBAE2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		823F61E81CBD30C900EBAE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				823F61E71CBD30C900EBAE2A /* NewDoLo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		823F61E91CBD30C900EBAE2A /* NewDoLo */ = {
+			isa = PBXGroup;
+			children = (
+				823F62011CBD313D00EBAE2A /* Source */,
+				823F621F1CBD320900EBAE2A /* NewDoLo.pch */,
+				823F61F61CBD30C900EBAE2A /* Assets.xcassets */,
+				823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */,
+				823F61FB1CBD30C900EBAE2A /* Info.plist */,
+				823F61EA1CBD30C900EBAE2A /* Supporting Files */,
+			);
+			path = NewDoLo;
+			sourceTree = "<group>";
+		};
+		823F61EA1CBD30C900EBAE2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				823F61EB1CBD30C900EBAE2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		823F62011CBD313D00EBAE2A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				823F62021CBD313D00EBAE2A /* Application */,
+				823F62051CBD313D00EBAE2A /* BaseClass */,
+				823F62061CBD313D00EBAE2A /* CodeClass */,
+				823F620A1CBD313D00EBAE2A /* Framework */,
+				823F620B1CBD313D00EBAE2A /* Header */,
+				823F62101CBD313D00EBAE2A /* Resources */,
+				823F62111CBD313D00EBAE2A /* Vender */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		823F62021CBD313D00EBAE2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				823F62031CBD313D00EBAE2A /* AppDelegate.h */,
+				823F62041CBD313D00EBAE2A /* AppDelegate.m */,
+				823F62131CBD318A00EBAE2A /* CustomTabBarVC.h */,
+				823F62141CBD318A00EBAE2A /* CustomTabBarVC.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		823F62051CBD313D00EBAE2A /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		823F62061CBD313D00EBAE2A /* CodeClass */ = {
+			isa = PBXGroup;
+			children = (
+				823F62071CBD313D00EBAE2A /* Controller */,
+				823F62081CBD313D00EBAE2A /* Model */,
+				823F62091CBD313D00EBAE2A /* View */,
+			);
+			path = CodeClass;
+			sourceTree = "<group>";
+		};
+		823F62071CBD313D00EBAE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				823F62161CBD31CE00EBAE2A /* DotaPlayerListViewController.h */,
+				823F62171CBD31CE00EBAE2A /* DotaPlayerListViewController.m */,
+				823F62191CBD31DA00EBAE2A /* LOLPlayerListViewController.h */,
+				823F621A1CBD31DA00EBAE2A /* LOLPlayerListViewController.m */,
+				823F621C1CBD31E900EBAE2A /* SettingViewController.h */,
+				823F621D1CBD31E900EBAE2A /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		823F62081CBD313D00EBAE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		823F62091CBD313D00EBAE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		823F620A1CBD313D00EBAE2A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		823F620B1CBD313D00EBAE2A /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				823F620C1CBD313D00EBAE2A /* APPHeader.h */,
+				823F620D1CBD313D00EBAE2A /* KEYHeader.h */,
+				823F620E1CBD313D00EBAE2A /* THRHeader.h */,
+				823F620F1CBD313D00EBAE2A /* URLHeader.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		823F62101CBD313D00EBAE2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				823F62201CBD35AB00EBAE2A /* imgs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		823F62111CBD313D00EBAE2A /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		823F62201CBD35AB00EBAE2A /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				823F62211CBD35AB00EBAE2A /* tabbar_background.png */,
+				823F62241CBD35AB00EBAE2A /* tabbar_button_centeradd.png */,
+				823F622B1CBD35AB00EBAE2A /* 图标 */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
+		823F622B1CBD35AB00EBAE2A /* 图标 */ = {
+			isa = PBXGroup;
+			children = (
+				823F622C1CBD35AB00EBAE2A /* AppIcon29x29~ipad.png */,
+				823F622D1CBD35AB00EBAE2A /* AppIcon57x57.png */,
+				823F622E1CBD35AB00EBAE2A /* AppIcon57x57@2x.png */,
+				823F622F1CBD35AB00EBAE2A /* AppIcon60x60@2x.png */,
+				823F62301CBD35AB00EBAE2A /* AppIcon72x72~ipad.png */,
+				823F62311CBD35AB00EBAE2A /* campus@2x.png */,
+				823F62321CBD35AB00EBAE2A /* date@2x.png */,
+				823F62331CBD35AB00EBAE2A /* denglu06@2x.png */,
+				823F62341CBD35AB00EBAE2A /* kind@2x.png */,
+				823F62351CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png */,
+				823F62361CBD35AB00EBAE2A /* LaunchImage-700@2x.png */,
+				823F62371CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png */,
+				823F62381CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png */,
+				823F62391CBD35AB00EBAE2A /* location@2x.png */,
+			);
+			path = "图标";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		823F61E61CBD30C900EBAE2A /* NewDoLo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 823F61FE1CBD30C900EBAE2A /* Build configuration list for PBXNativeTarget "NewDoLo" */;
+			buildPhases = (
+				823F61E31CBD30C900EBAE2A /* Sources */,
+				823F61E41CBD30C900EBAE2A /* Frameworks */,
+				823F61E51CBD30C900EBAE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewDoLo;
+			productName = NewDoLo;
+			productReference = 823F61E71CBD30C900EBAE2A /* NewDoLo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		823F61DF1CBD30C900EBAE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "男孩无衣";
+				TargetAttributes = {
+					823F61E61CBD30C900EBAE2A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 823F61E21CBD30C900EBAE2A /* Build configuration list for PBXProject "NewDoLo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 823F61DE1CBD30C900EBAE2A;
+			productRefGroup = 823F61E81CBD30C900EBAE2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				823F61E61CBD30C900EBAE2A /* NewDoLo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		823F61E51CBD30C900EBAE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823F624B1CBD35AB00EBAE2A /* denglu06@2x.png in Resources */,
+				823F624D1CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png in Resources */,
+				823F62451CBD35AB00EBAE2A /* AppIcon57x57.png in Resources */,
+				823F624E1CBD35AB00EBAE2A /* LaunchImage-700@2x.png in Resources */,
+				823F62441CBD35AB00EBAE2A /* AppIcon29x29~ipad.png in Resources */,
+				823F62501CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */,
+				823F62461CBD35AB00EBAE2A /* AppIcon57x57@2x.png in Resources */,
+				823F623A1CBD35AB00EBAE2A /* tabbar_background.png in Resources */,
+				823F62481CBD35AB00EBAE2A /* AppIcon72x72~ipad.png in Resources */,
+				823F624A1CBD35AB00EBAE2A /* date@2x.png in Resources */,
+				823F62511CBD35AB00EBAE2A /* location@2x.png in Resources */,
+				823F623D1CBD35AB00EBAE2A /* tabbar_button_centeradd.png in Resources */,
+				823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */,
+				823F624C1CBD35AB00EBAE2A /* kind@2x.png in Resources */,
+				823F624F1CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png in Resources */,
+				823F62471CBD35AB00EBAE2A /* AppIcon60x60@2x.png in Resources */,
+				823F62491CBD35AB00EBAE2A /* campus@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		823F61E31CBD30C900EBAE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */,
+				823F62181CBD31CE00EBAE2A /* DotaPlayerListViewController.m in Sources */,
+				823F621B1CBD31DA00EBAE2A /* LOLPlayerListViewController.m in Sources */,
+				823F61EC1CBD30C900EBAE2A /* main.m in Sources */,
+				823F62151CBD318A00EBAE2A /* CustomTabBarVC.m in Sources */,
+				823F621E1CBD31E900EBAE2A /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				823F61F91CBD30C900EBAE2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		823F61FC1CBD30C900EBAE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		823F61FD1CBD30C900EBAE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		823F61FF1CBD30C900EBAE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewDoLo/NewDoLo.pch";
+				INFOPLIST_FILE = NewDoLo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucidy.NewDoLo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		823F62001CBD30C900EBAE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewDoLo/NewDoLo.pch";
+				INFOPLIST_FILE = NewDoLo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucidy.NewDoLo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		823F61E21CBD30C900EBAE2A /* Build configuration list for PBXProject "NewDoLo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823F61FC1CBD30C900EBAE2A /* Debug */,
+				823F61FD1CBD30C900EBAE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		823F61FE1CBD30C900EBAE2A /* Build configuration list for PBXNativeTarget "NewDoLo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823F61FF1CBD30C900EBAE2A /* Debug */,
+				823F62001CBD30C900EBAE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 823F61DF1CBD30C900EBAE2A /* Project object */;
+}
