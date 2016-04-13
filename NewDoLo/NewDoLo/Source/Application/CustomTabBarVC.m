@@ -21,24 +21,22 @@
 @implementation CustomTabBarVC
 - (void)viewdidControl
 {
-    // 第二个页面
-    LOLPlayerListViewController * secondVC = [[LOLPlayerListViewController alloc]init];
-    secondVC.navigationItem.title = @"LOL";
-    UINavigationController * secondNC = [[UINavigationController alloc] initWithRootViewController:secondVC];
+    // Dota页面
+    DotaPlayerListViewController * DotaVC = [[DotaPlayerListViewController alloc] init];
+    DotaVC.navigationItem.title = @"Dota";
+    UINavigationController * DotaNC = [[UINavigationController alloc]initWithRootViewController:DotaVC];
     
-    // 中间页面
-    SettingViewController * middleVC = [[SettingViewController alloc]init];
-    middleVC.navigationItem.title = @"中间";
-    middleVC.view.backgroundColor = [UIColor blueColor];
-    UINavigationController * middleNC = [[UINavigationController alloc] initWithRootViewController:middleVC];
+    // LOL页面
+    LOLPlayerListViewController * LOLVC = [[LOLPlayerListViewController alloc]init];
+    LOLVC.navigationItem.title = @"LOL";
+    UINavigationController * LOLNC = [[UINavigationController alloc] initWithRootViewController:LOLVC];
+    
+    // 设置页面
+    SettingViewController * settingVC = [[SettingViewController alloc]init];
+    settingVC.navigationItem.title = @"中间";
+    UINavigationController * settingNC = [[UINavigationController alloc] initWithRootViewController:settingVC];
 
-    // 第一个页面
-    DotaPlayerListViewController * firstVC = [[DotaPlayerListViewController alloc] init];
-    firstVC.navigationItem.title = @"Dota";
-    firstVC.view.backgroundColor = [UIColor grayColor];
-    UINavigationController * firstNC = [[UINavigationController alloc]initWithRootViewController:firstVC];
-    
-    self.viewControllers = [NSArray arrayWithObjects:firstNC,middleNC,secondNC,nil];
+    self.viewControllers = [NSArray arrayWithObjects:DotaNC,LOLNC,settingNC,nil];
 }
 
 - (void)viewDidLoad {
@@ -69,7 +67,7 @@
     // 设置button的背景图片
     // OneBtn
     // 注意除了第三个button, 其他的button都是从y坐标的20处开始的. 中间的button是从0开始.
-    self.oneBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, KWidthScreen/3.0, 60)];
+    self.oneBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, KWidthScreen / 3.0, 60)];
     [self.oneBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_button_centeradd.png"] forState:UIControlStateNormal];
     self.oneBtn.tag = 1;
     [self.customView addSubview:self.oneBtn];

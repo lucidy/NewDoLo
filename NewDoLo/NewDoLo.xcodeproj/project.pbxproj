@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A059D56DCA9534F4C1CB3C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70314F1D51088C3734EE2B9 /* libPods.a */; };
+		82068AAD1CBD43E700E03312 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82068AA51CBD43E700E03312 /* LICENSE.txt */; };
+		82068AAE1CBD43E700E03312 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068AA61CBD43E700E03312 /* README.md */; };
+		82068AAF1CBD43E700E03312 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AA91CBD43E700E03312 /* SVIndefiniteAnimatedView.m */; };
+		82068AB01CBD43E700E03312 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 82068AAA1CBD43E700E03312 /* SVProgressHUD.bundle */; };
+		82068AB11CBD43E700E03312 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AAC1CBD43E700E03312 /* SVProgressHUD.m */; };
+		82068AB41CBDD20700E03312 /* GetDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AB31CBDD20700E03312 /* GetDataTool.m */; };
+		82068AB81CBDDC0500E03312 /* PlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AB71CBDDC0500E03312 /* PlayerTableViewCell.m */; };
+		82068ACC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068ABC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82068ACD1CBDDD2700E03312 /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068ABE1CBDDD2700E03312 /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82068ACE1CBDDD2700E03312 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AC01CBDDD2700E03312 /* MessageInterceptor.m */; };
+		82068ACF1CBDDD2700E03312 /* PullTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068AC21CBDDD2700E03312 /* PullTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82068AD01CBDDD2700E03312 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC41CBDDD2700E03312 /* blackArrow.png */; };
+		82068AD11CBDDD2700E03312 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC51CBDDD2700E03312 /* blackArrow@2x.png */; };
+		82068AD21CBDDD2700E03312 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC61CBDDD2700E03312 /* blueArrow.png */; };
+		82068AD31CBDDD2700E03312 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC71CBDDD2700E03312 /* blueArrow@2x.png */; };
+		82068AD41CBDDD2700E03312 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC81CBDDD2700E03312 /* grayArrow.png */; };
+		82068AD51CBDDD2700E03312 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068AC91CBDDD2700E03312 /* grayArrow@2x.png */; };
+		82068AD61CBDDD2700E03312 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068ACA1CBDDD2700E03312 /* whiteArrow.png */; };
+		82068AD71CBDDD2700E03312 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82068ACB1CBDDD2700E03312 /* whiteArrow@2x.png */; };
 		823F61EC1CBD30C900EBAE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F61EB1CBD30C900EBAE2A /* main.m */; };
 		823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F61CBD30C900EBAE2A /* Assets.xcassets */; };
 		823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */; };
@@ -34,6 +54,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AE97A1B7842D874FC6D9307 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		54A7D40135B0FAF2E84DDCB8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		82068AA51CBD43E700E03312 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		82068AA61CBD43E700E03312 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		82068AA81CBD43E700E03312 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		82068AA91CBD43E700E03312 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		82068AAA1CBD43E700E03312 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		82068AAB1CBD43E700E03312 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		82068AAC1CBD43E700E03312 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		82068AB21CBDD20700E03312 /* GetDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetDataTool.h; sourceTree = "<group>"; };
+		82068AB31CBDD20700E03312 /* GetDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDataTool.m; sourceTree = "<group>"; };
+		82068AB61CBDDC0500E03312 /* PlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerTableViewCell.h; sourceTree = "<group>"; };
+		82068AB71CBDDC0500E03312 /* PlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTableViewCell.m; sourceTree = "<group>"; };
+		82068ABB1CBDDD2700E03312 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		82068ABC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		82068ABD1CBDDD2700E03312 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
+		82068ABE1CBDDD2700E03312 /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
+		82068ABF1CBDDD2700E03312 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
+		82068AC01CBDDD2700E03312 /* MessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptor.m; sourceTree = "<group>"; };
+		82068AC11CBDDD2700E03312 /* PullTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullTableView.h; sourceTree = "<group>"; };
+		82068AC21CBDDD2700E03312 /* PullTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullTableView.m; sourceTree = "<group>"; };
+		82068AC41CBDDD2700E03312 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		82068AC51CBDDD2700E03312 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		82068AC61CBDDD2700E03312 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		82068AC71CBDDD2700E03312 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		82068AC81CBDDD2700E03312 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		82068AC91CBDDD2700E03312 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		82068ACA1CBDDD2700E03312 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		82068ACB1CBDDD2700E03312 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		823F61E71CBD30C900EBAE2A /* NewDoLo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDoLo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823F61EB1CBD30C900EBAE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		823F61F61CBD30C900EBAE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +119,7 @@
 		823F62371CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
 		823F62381CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		823F62391CBD35AB00EBAE2A /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		B70314F1D51088C3734EE2B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,17 +127,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A059D56DCA9534F4C1CB3C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F3C65033020975B19DF4CE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B70314F1D51088C3734EE2B9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68C043B6121D245E60C2E923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE97A1B7842D874FC6D9307 /* Pods.debug.xcconfig */,
+				54A7D40135B0FAF2E84DDCB8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82068AA41CBD43E700E03312 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				82068AA51CBD43E700E03312 /* LICENSE.txt */,
+				82068AA61CBD43E700E03312 /* README.md */,
+				82068AA71CBD43E700E03312 /* SVProgressHUD */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		82068AA71CBD43E700E03312 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				82068AA81CBD43E700E03312 /* SVIndefiniteAnimatedView.h */,
+				82068AA91CBD43E700E03312 /* SVIndefiniteAnimatedView.m */,
+				82068AAA1CBD43E700E03312 /* SVProgressHUD.bundle */,
+				82068AAB1CBD43E700E03312 /* SVProgressHUD.h */,
+				82068AAC1CBD43E700E03312 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		82068AB51CBDDBEC00E03312 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82068AB61CBDDC0500E03312 /* PlayerTableViewCell.h */,
+				82068AB71CBDDC0500E03312 /* PlayerTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		82068AB91CBDDD2700E03312 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				82068ABA1CBDDD2700E03312 /* Classes */,
+				82068AC31CBDDD2700E03312 /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		82068ABA1CBDDD2700E03312 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				82068ABB1CBDDD2700E03312 /* EGORefreshTableHeaderView.h */,
+				82068ABC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m */,
+				82068ABD1CBDDD2700E03312 /* LoadMoreTableFooterView.h */,
+				82068ABE1CBDDD2700E03312 /* LoadMoreTableFooterView.m */,
+				82068ABF1CBDDD2700E03312 /* MessageInterceptor.h */,
+				82068AC01CBDDD2700E03312 /* MessageInterceptor.m */,
+				82068AC11CBDDD2700E03312 /* PullTableView.h */,
+				82068AC21CBDDD2700E03312 /* PullTableView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		82068AC31CBDDD2700E03312 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82068AC41CBDDD2700E03312 /* blackArrow.png */,
+				82068AC51CBDDD2700E03312 /* blackArrow@2x.png */,
+				82068AC61CBDDD2700E03312 /* blueArrow.png */,
+				82068AC71CBDDD2700E03312 /* blueArrow@2x.png */,
+				82068AC81CBDDD2700E03312 /* grayArrow.png */,
+				82068AC91CBDDD2700E03312 /* grayArrow@2x.png */,
+				82068ACA1CBDDD2700E03312 /* whiteArrow.png */,
+				82068ACB1CBDDD2700E03312 /* whiteArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		823F61DE1CBD30C900EBAE2A = {
 			isa = PBXGroup;
 			children = (
 				823F61E91CBD30C900EBAE2A /* NewDoLo */,
 				823F61E81CBD30C900EBAE2A /* Products */,
+				68C043B6121D245E60C2E923 /* Pods */,
+				0F3C65033020975B19DF4CE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +288,8 @@
 		823F62051CBD313D00EBAE2A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				82068AB21CBDD20700E03312 /* GetDataTool.h */,
+				82068AB31CBDD20700E03312 /* GetDataTool.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -185,6 +327,7 @@
 		823F62091CBD313D00EBAE2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82068AB51CBDDBEC00E03312 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +361,8 @@
 		823F62111CBD313D00EBAE2A /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				82068AB91CBDDD2700E03312 /* EGOTableViewPullRefresh */,
+				82068AA41CBD43E700E03312 /* SVProgressHUD */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -260,9 +405,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 823F61FE1CBD30C900EBAE2A /* Build configuration list for PBXNativeTarget "NewDoLo" */;
 			buildPhases = (
+				B608E89F51D004837E768705 /* Check Pods Manifest.lock */,
 				823F61E31CBD30C900EBAE2A /* Sources */,
 				823F61E41CBD30C900EBAE2A /* Frameworks */,
 				823F61E51CBD30C900EBAE2A /* Resources */,
+				CFFD8681C01D0A1FC7C2D824 /* Embed Pods Frameworks */,
+				1FB07ACF9A0EDBB48028E90F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,40 +458,107 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82068AD31CBDDD2700E03312 /* blueArrow@2x.png in Resources */,
 				823F624B1CBD35AB00EBAE2A /* denglu06@2x.png in Resources */,
 				823F624D1CBD35AB00EBAE2A /* LaunchImage-700-568h@2x.png in Resources */,
 				823F62451CBD35AB00EBAE2A /* AppIcon57x57.png in Resources */,
 				823F624E1CBD35AB00EBAE2A /* LaunchImage-700@2x.png in Resources */,
+				82068AD01CBDDD2700E03312 /* blackArrow.png in Resources */,
+				82068AAD1CBD43E700E03312 /* LICENSE.txt in Resources */,
+				82068AD61CBDDD2700E03312 /* whiteArrow.png in Resources */,
 				823F62441CBD35AB00EBAE2A /* AppIcon29x29~ipad.png in Resources */,
 				823F62501CBD35AB00EBAE2A /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */,
 				823F62461CBD35AB00EBAE2A /* AppIcon57x57@2x.png in Resources */,
+				82068AD11CBDDD2700E03312 /* blackArrow@2x.png in Resources */,
 				823F623A1CBD35AB00EBAE2A /* tabbar_background.png in Resources */,
 				823F62481CBD35AB00EBAE2A /* AppIcon72x72~ipad.png in Resources */,
 				823F624A1CBD35AB00EBAE2A /* date@2x.png in Resources */,
+				82068AD51CBDDD2700E03312 /* grayArrow@2x.png in Resources */,
 				823F62511CBD35AB00EBAE2A /* location@2x.png in Resources */,
 				823F623D1CBD35AB00EBAE2A /* tabbar_button_centeradd.png in Resources */,
+				82068AD41CBDDD2700E03312 /* grayArrow.png in Resources */,
 				823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */,
+				82068AB01CBD43E700E03312 /* SVProgressHUD.bundle in Resources */,
 				823F624C1CBD35AB00EBAE2A /* kind@2x.png in Resources */,
 				823F624F1CBD35AB00EBAE2A /* LaunchImage-800-667h@2x.png in Resources */,
+				82068AD21CBDDD2700E03312 /* blueArrow.png in Resources */,
 				823F62471CBD35AB00EBAE2A /* AppIcon60x60@2x.png in Resources */,
+				82068AD71CBDDD2700E03312 /* whiteArrow@2x.png in Resources */,
 				823F62491CBD35AB00EBAE2A /* campus@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FB07ACF9A0EDBB48028E90F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B608E89F51D004837E768705 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFFD8681C01D0A1FC7C2D824 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		823F61E31CBD30C900EBAE2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82068ACC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m in Sources */,
 				823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */,
 				823F62181CBD31CE00EBAE2A /* DotaPlayerListViewController.m in Sources */,
+				82068AB41CBDD20700E03312 /* GetDataTool.m in Sources */,
 				823F621B1CBD31DA00EBAE2A /* LOLPlayerListViewController.m in Sources */,
+				82068AB81CBDDC0500E03312 /* PlayerTableViewCell.m in Sources */,
+				82068AAF1CBD43E700E03312 /* SVIndefiniteAnimatedView.m in Sources */,
+				82068AAE1CBD43E700E03312 /* README.md in Sources */,
+				82068ACD1CBDDD2700E03312 /* LoadMoreTableFooterView.m in Sources */,
+				82068AB11CBD43E700E03312 /* SVProgressHUD.m in Sources */,
 				823F61EC1CBD30C900EBAE2A /* main.m in Sources */,
 				823F62151CBD318A00EBAE2A /* CustomTabBarVC.m in Sources */,
 				823F621E1CBD31E900EBAE2A /* SettingViewController.m in Sources */,
+				82068ACF1CBDDD2700E03312 /* PullTableView.m in Sources */,
+				82068ACE1CBDDD2700E03312 /* MessageInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +660,7 @@
 		};
 		823F61FF1CBD30C900EBAE2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE97A1B7842D874FC6D9307 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -458,6 +674,7 @@
 		};
 		823F62001CBD30C900EBAE2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A7D40135B0FAF2E84DDCB8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -488,6 +705,7 @@
 				823F62001CBD30C900EBAE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

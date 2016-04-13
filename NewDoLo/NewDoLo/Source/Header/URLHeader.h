@@ -9,4 +9,8 @@
 #ifndef Project_URLHeader_h
 #define Project_URLHeader_h
 
+// dota主播列表
+#define kDotaPlayerListURL @"http://api.dotaly.com/api/v1/authors?iap=0&ident=F5D9CA17-1E5C-4B19-8727-4C3A51B77596&jb=0"
+
+
 #endif
