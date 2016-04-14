@@ -8,8 +8,9 @@
 
 #import "DotaPlayerListViewController.h"
 
+
 @interface DotaPlayerListViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)NSMutableArray * dotaPlayerListDataArray;
+@property(nonatomic,strong)NSMutableArray * dataArray;
 @property(nonatomic,strong)BaseTableView * tableView;
 @end
 
@@ -22,7 +23,7 @@
         [SVProgressHUD showWithStatus:@"正在加载..." maskType:SVProgressHUDMaskTypeGradient];
     } Completion:^(BOOL isSuccess, NSDictionary *dict) {
         if (isSuccess) {
-            self.dotaPlayerListDataArray = dict[@"authors"];
+            self.dataArray = dict[@"authors"];
             // 回到主线程修改UI
             dispatch_async(dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];
@@ -31,6 +32,10 @@
         }else
         {
             NSLog(@"数据请求失败");
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+            
         }
     }];
     
@@ -39,7 +44,7 @@
         // 进入刷新状态后会自动调用这个block
         [kGetDataTool requestDataByGetWithURL:kDotaPlayerListURL Anticipation:nil Completion:^(BOOL isSuccess, NSDictionary *dict) {
             if (isSuccess) {
-                self.dotaPlayerListDataArray = dict[@"authors"];
+                self.dataArray = dict[@"authors"];
                 // 回到主线程修改UI
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
@@ -94,7 +99,7 @@
     
     return cell;
 }
-
+// cell自适应高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary * dict = self.dotaPlayerListDataArray[indexPath.row];
@@ -110,7 +115,7 @@
                                  contentViewWidth:[self cellContentViewWith]
             ];
 }
-
+// 计算屏幕宽度
 - (CGFloat)cellContentViewWith
 {
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
@@ -122,19 +127,27 @@
     return width;
 }
 
+// cell点击事件
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DotaProgramViewController * dotaProgramVC = [[DotaProgramViewController alloc] init];
+    dotaProgramVC.playerID = self.dotaPlayerListDataArray[indexPath.row][@"id"];
+    [self.navigationController pushViewController:dotaProgramVC animated:YES];
+}
+
 // !!!: 懒加载
 -(NSMutableArray *)dotaPlayerListDataArray
 {
-    if (_dotaPlayerListDataArray == nil) {
-        _dotaPlayerListDataArray = [NSMutableArray array];
+    if (_dataArray == nil) {
+        _dataArray = [NSMutableArray array];
     }
-    return _dotaPlayerListDataArray;
+    return _dataArray;
 }
 
 -(UITableView *)tableView
 {
     if (_tableView == nil) {
-        _tableView = [[BaseTableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 60) style:(UITableViewStylePlain)];
+        _tableView = [[BaseTableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kBottomHeighSubLittle)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         self.tableView.backgroundColor = [UIColor clearColor];
@@ -142,9 +155,9 @@
     }
     return _tableView;
 }
+
 /*
 #pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
