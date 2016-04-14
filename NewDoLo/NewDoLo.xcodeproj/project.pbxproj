@@ -54,6 +54,8 @@
 		82068B661CBF28FD00E03312 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B631CBF28FD00E03312 /* SettingViewController.m */; };
 		82068B6C1CBF2A0400E03312 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B6B1CBF2A0400E03312 /* BaseTableView.m */; };
 		82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B6E1CBF2ADE00E03312 /* BaseListViewController.m */; };
+		82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B711CBF40F800E03312 /* BaseCollectionView.m */; };
+		82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B741CBF412800E03312 /* DotaProgramViewController.m */; };
 		823F61EC1CBD30C900EBAE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F61EB1CBD30C900EBAE2A /* main.m */; };
 		823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F61CBD30C900EBAE2A /* Assets.xcassets */; };
 		823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */; };
@@ -157,6 +159,10 @@
 		82068B6B1CBF2A0400E03312 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		82068B6D1CBF2ADE00E03312 /* BaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseListViewController.h; sourceTree = "<group>"; };
 		82068B6E1CBF2ADE00E03312 /* BaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseListViewController.m; sourceTree = "<group>"; };
+		82068B701CBF40F800E03312 /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
+		82068B711CBF40F800E03312 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
+		82068B731CBF412800E03312 /* DotaProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotaProgramViewController.h; sourceTree = "<group>"; };
+		82068B741CBF412800E03312 /* DotaProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotaProgramViewController.m; sourceTree = "<group>"; };
 		823F61E71CBD30C900EBAE2A /* NewDoLo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDoLo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823F61EB1CBD30C900EBAE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		823F61F61CBD30C900EBAE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -334,6 +340,8 @@
 			children = (
 				82068B5C1CBF28FD00E03312 /* DotaPlayerListViewController.h */,
 				82068B5D1CBF28FD00E03312 /* DotaPlayerListViewController.m */,
+				82068B731CBF412800E03312 /* DotaProgramViewController.h */,
+				82068B741CBF412800E03312 /* DotaProgramViewController.m */,
 			);
 			path = DotaController;
 			sourceTree = "<group>";
@@ -429,6 +437,8 @@
 				82068B6B1CBF2A0400E03312 /* BaseTableView.m */,
 				82068B6D1CBF2ADE00E03312 /* BaseListViewController.h */,
 				82068B6E1CBF2ADE00E03312 /* BaseListViewController.m */,
+				82068B701CBF40F800E03312 /* BaseCollectionView.h */,
+				82068B711CBF40F800E03312 /* BaseCollectionView.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -695,9 +705,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82068B551CBE8B4200E03312 /* UIImage+GIF.m in Sources */,
+				82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */,
 				82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */,
 				82068ACC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m in Sources */,
 				823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */,
+				82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */,
 				82068AB41CBDD20700E03312 /* GetDataTool.m in Sources */,
 				82068B571CBE8B4200E03312 /* UIImage+WebP.m in Sources */,
 				82068B4C1CBE8B4200E03312 /* NSData+ImageContentType.m in Sources */,

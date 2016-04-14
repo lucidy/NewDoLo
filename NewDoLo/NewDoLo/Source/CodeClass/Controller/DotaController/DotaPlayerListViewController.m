@@ -94,7 +94,7 @@
     
     return cell;
 }
-
+// cell自适应高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary * dict = self.dotaPlayerListDataArray[indexPath.row];
@@ -110,7 +110,7 @@
                                  contentViewWidth:[self cellContentViewWith]
             ];
 }
-
+// 计算屏幕宽度
 - (CGFloat)cellContentViewWith
 {
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
@@ -142,9 +142,9 @@
     }
     return _tableView;
 }
+
 /*
 #pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
