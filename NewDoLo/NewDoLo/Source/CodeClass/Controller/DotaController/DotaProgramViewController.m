@@ -10,7 +10,7 @@
 
 @interface DotaProgramViewController ()<iCarouselDataSource, iCarouselDelegate>
 @property(nonatomic,strong)NSMutableArray * dataArray;
-
+@property(nonatomic,assign)NSInteger offset;
 @end
 
 @implementation DotaProgramViewController
@@ -18,10 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 是否刷子中
-    _reloadingFlag = NO;
-    
-    // 修改导航栏Item
+    // 每次加载刷新偏移量
+    _offset = 50;
     
     // 请求数据
     NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURL,self.playerID];
@@ -68,11 +66,22 @@
     if (view == nil)
     {
         view = [[ProgramInfoView alloc] initWithFrame:CGRectMake(0, 0, 300.0f, 300.0f)];
-        ProgramListModel * model = [[ProgramListModel alloc] init];
-        [model setValuesForKeysWithDictionary:self.dataArray[index]];
-        
-        ((ProgramInfoView *)view).programModel = model;
     }
+    
+    // 设置UIView上的属性的时候, 要把设置代码放到 if(view == nil) {...}的外面.
+    ProgramListModel * model = [[ProgramListModel alloc] init];
+    [model setValuesForKeysWithDictionary:self.dataArray[index]];
+    
+    ((ProgramInfoView *)view).programModel = model;
+    
+    
+    // !!!!!!!!!! 被这句话坑惨了!!!! 没注意这句注释!!!哔了狗了!!!!!!
+    //set item label
+    //remember to always set any properties of your carousel item
+    //views outside of the `if (view == nil) {...}` check otherwise
+    //you'll get weird issues with carousel item content appearing
+    //in the wrong place in the carousel
+
     return view;
 }
 
@@ -84,30 +93,22 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel placeholderViewAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    static int offset = 50 ;
     if (index != 0) {
         // 加载更多数据并且刷新
-        NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURLOffSet,self.playerID,offset];
+        NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURLOffSet,self.playerID,_offset];
         [kGetDataTool requestDataByGetWithURL:URLStr Anticipation:^{
-            NSLog(@"开始加载");
-            _reloadingFlag = YES;
+            [SVProgressHUD showWithStatus:@"正在加载..." maskType:SVProgressHUDMaskTypeGradient];
         } Completion:^(BOOL isSuccess, NSDictionary *dict) {
             if (isSuccess && dict[@"videos"] > 0) {
-                NSLog(@"%ld",dict.count);
                 [self.dataArray addObjectsFromArray:dict[@"videos"]];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    
-                    NSLog(@"%lu",(unsigned long)self.dataArray.count);
-                    for (NSDictionary * sss in self.dataArray) {
-                        NSLog(@"%@",sss[@"title"]);
-                    }
+                    [SVProgressHUD dismiss];
                     [self.carousel reloadData];
                 });
-                offset += 50;
+                _offset += 50;
             }else{
                 NSLog(@"数据请求失败");
             }
-            
         }];
     }
     
