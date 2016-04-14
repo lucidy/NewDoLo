@@ -56,6 +56,12 @@
 		82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B6E1CBF2ADE00E03312 /* BaseListViewController.m */; };
 		82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B711CBF40F800E03312 /* BaseCollectionView.m */; };
 		82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B741CBF412800E03312 /* DotaProgramViewController.m */; };
+		82068B791CBF44E600E03312 /* iCarouselExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */; };
+		82068B7A1CBF44E600E03312 /* iCarouselExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */; };
+		82068B811CBF452A00E03312 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B7E1CBF452A00E03312 /* iCarousel.m */; };
+		82068B821CBF452A00E03312 /* LICENCE.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B7F1CBF452A00E03312 /* LICENCE.md */; };
+		82068B831CBF452A00E03312 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B801CBF452A00E03312 /* README.md */; };
+		82068B861CBF6F6300E03312 /* ProgramListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B851CBF6F6300E03312 /* ProgramListModel.m */; };
 		823F61EC1CBD30C900EBAE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F61EB1CBD30C900EBAE2A /* main.m */; };
 		823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F61CBD30C900EBAE2A /* Assets.xcassets */; };
 		823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */; };
@@ -163,6 +169,15 @@
 		82068B711CBF40F800E03312 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
 		82068B731CBF412800E03312 /* DotaProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotaProgramViewController.h; sourceTree = "<group>"; };
 		82068B741CBF412800E03312 /* DotaProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotaProgramViewController.m; sourceTree = "<group>"; };
+		82068B761CBF44E600E03312 /* iCarouselExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselExampleViewController.h; sourceTree = "<group>"; };
+		82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselExampleViewController.m; sourceTree = "<group>"; };
+		82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iCarouselExampleViewController.xib; sourceTree = "<group>"; };
+		82068B7D1CBF452A00E03312 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		82068B7E1CBF452A00E03312 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		82068B7F1CBF452A00E03312 /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
+		82068B801CBF452A00E03312 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		82068B841CBF6F6300E03312 /* ProgramListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramListModel.h; sourceTree = "<group>"; };
+		82068B851CBF6F6300E03312 /* ProgramListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramListModel.m; sourceTree = "<group>"; };
 		823F61E71CBD30C900EBAE2A /* NewDoLo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDoLo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823F61EB1CBD30C900EBAE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		823F61F61CBD30C900EBAE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -338,6 +353,9 @@
 		82068B5B1CBF28FD00E03312 /* DotaController */ = {
 			isa = PBXGroup;
 			children = (
+				82068B761CBF44E600E03312 /* iCarouselExampleViewController.h */,
+				82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */,
+				82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */,
 				82068B5C1CBF28FD00E03312 /* DotaPlayerListViewController.h */,
 				82068B5D1CBF28FD00E03312 /* DotaPlayerListViewController.m */,
 				82068B731CBF412800E03312 /* DotaProgramViewController.h */,
@@ -362,6 +380,25 @@
 				82068B631CBF28FD00E03312 /* SettingViewController.m */,
 			);
 			path = SettingController;
+			sourceTree = "<group>";
+		};
+		82068B7B1CBF452A00E03312 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				82068B7C1CBF452A00E03312 /* iCarousel */,
+				82068B7F1CBF452A00E03312 /* LICENCE.md */,
+				82068B801CBF452A00E03312 /* README.md */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		82068B7C1CBF452A00E03312 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				82068B7D1CBF452A00E03312 /* iCarousel.h */,
+				82068B7E1CBF452A00E03312 /* iCarousel.m */,
+			);
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 		823F61DE1CBD30C900EBAE2A = {
@@ -468,6 +505,8 @@
 			children = (
 				82068B1E1CBE413000E03312 /* PlayerListModel.h */,
 				82068B1F1CBE413000E03312 /* PlayerListModel.m */,
+				82068B841CBF6F6300E03312 /* ProgramListModel.h */,
+				82068B851CBF6F6300E03312 /* ProgramListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +553,7 @@
 		823F62111CBD313D00EBAE2A /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				82068B7B1CBF452A00E03312 /* iCarousel */,
 				82068B291CBE8B4200E03312 /* SDWebImage */,
 				82068AB91CBDDD2700E03312 /* EGOTableViewPullRefresh */,
 				82068AA41CBD43E700E03312 /* SVProgressHUD */,
@@ -638,6 +678,7 @@
 				823F62511CBD35AB00EBAE2A /* location@2x.png in Resources */,
 				823F623D1CBD35AB00EBAE2A /* tabbar_button_centeradd.png in Resources */,
 				82068AD41CBDDD2700E03312 /* grayArrow.png in Resources */,
+				82068B7A1CBF44E600E03312 /* iCarouselExampleViewController.xib in Resources */,
 				823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */,
 				82068AB01CBD43E700E03312 /* SVProgressHUD.bundle in Resources */,
 				823F624C1CBD35AB00EBAE2A /* kind@2x.png in Resources */,
@@ -707,6 +748,7 @@
 				82068B551CBE8B4200E03312 /* UIImage+GIF.m in Sources */,
 				82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */,
 				82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */,
+				82068B791CBF44E600E03312 /* iCarouselExampleViewController.m in Sources */,
 				82068ACC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m in Sources */,
 				823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */,
 				82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */,
@@ -714,15 +756,18 @@
 				82068B571CBE8B4200E03312 /* UIImage+WebP.m in Sources */,
 				82068B4C1CBE8B4200E03312 /* NSData+ImageContentType.m in Sources */,
 				82068B6C1CBF2A0400E03312 /* BaseTableView.m in Sources */,
+				82068B811CBF452A00E03312 /* iCarousel.m in Sources */,
 				82068AB81CBDDC0500E03312 /* PlayerTableViewCell.m in Sources */,
 				82068B4F1CBE8B4200E03312 /* SDWebImageDecoder.m in Sources */,
 				82068B201CBE413000E03312 /* PlayerListModel.m in Sources */,
 				82068B541CBE8B4200E03312 /* UIButton+WebCache.m in Sources */,
 				82068B651CBF28FD00E03312 /* LOLPlayerListViewController.m in Sources */,
+				82068B821CBF452A00E03312 /* LICENCE.md in Sources */,
 				82068B521CBE8B4200E03312 /* SDWebImageManager.m in Sources */,
 				82068AAF1CBD43E700E03312 /* SVIndefiniteAnimatedView.m in Sources */,
 				82068B591CBE8B4200E03312 /* UIImageView+WebCache.m in Sources */,
 				82068AAE1CBD43E700E03312 /* README.md in Sources */,
+				82068B831CBF452A00E03312 /* README.md in Sources */,
 				82068B661CBF28FD00E03312 /* SettingViewController.m in Sources */,
 				82068ACD1CBDDD2700E03312 /* LoadMoreTableFooterView.m in Sources */,
 				82068AB11CBD43E700E03312 /* SVProgressHUD.m in Sources */,
@@ -736,6 +781,7 @@
 				82068B511CBE8B4200E03312 /* SDWebImageDownloaderOperation.m in Sources */,
 				82068B4B1CBE8B4200E03312 /* MKAnnotationView+WebCache.m in Sources */,
 				82068B561CBE8B4200E03312 /* UIImage+MultiFormat.m in Sources */,
+				82068B861CBF6F6300E03312 /* ProgramListModel.m in Sources */,
 				82068B5A1CBE8B4200E03312 /* UIView+WebCacheOperation.m in Sources */,
 				82068B4E1CBE8B4200E03312 /* SDWebImageCompat.m in Sources */,
 				82068ACF1CBDDD2700E03312 /* PullTableView.m in Sources */,

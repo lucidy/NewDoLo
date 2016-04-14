@@ -34,10 +34,15 @@
     if (anticipation != nil) {
         anticipation();
     }
+
+    // 0.中文转码
+    NSString *s = URLStr;
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:s];
+    NSString *sUrl = [s stringByAddingPercentEncodingWithAllowedCharacters:set];
     
     // 数据请求
     // 1Business.BusinessCenter.Detail.创建URL对象
-    NSURL *url = [NSURL URLWithString:URLStr];
+    NSURL *url = [NSURL URLWithString:sUrl];
     // 2.创建request对象
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     // 3.创建seccon对象

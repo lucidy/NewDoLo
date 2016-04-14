@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface DotaProgramViewController : UIViewController
-
+@interface DotaProgramViewController : BaseListViewController
+@property(nonatomic,strong)NSString * playerID;
+@property(nonatomic,strong)iCarousel *carousel;
 @end

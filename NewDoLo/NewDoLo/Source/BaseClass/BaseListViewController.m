@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor clearColor];
+    
     // 滑动时候, 使navigationController隐藏
     self.navigationController.hidesBarsOnSwipe = YES;
     

@@ -14,9 +14,7 @@
 #define KWidthScreen [UIScreen mainScreen].bounds.size.width
 #define KheightScreen [UIScreen mainScreen].bounds.size.height
 
-#define kBottomHeigh 50
-#define kBottomHeighSubLittle 40
-#define kGap 10
+
 
 @interface CustomTabBarVC () <UINavigationControllerDelegate>
 

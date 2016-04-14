@@ -19,4 +19,7 @@
 // SVProgressHUD
 #import "SVProgressHUD.h"
 
+// iCarousel
+#import "iCarousel.h"
+
 #endif
