@@ -60,34 +60,15 @@
 // 返回每个Items的View
 - (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    UILabel *label = nil;
-    
     //create new view if no view is available for recycling
     if (view == nil)
     {
-        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300.0f, 300.0f)];
-        ((UIImageView *)view).image = [UIImage imageNamed:@"placeholder.png"];
-        view.contentMode = UIViewContentModeCenter;
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = UITextAlignmentCenter;
-        label.font = [label.font fontWithSize:30];
-        label.tag = 1;
-        [view addSubview:label];
+        view = [[ProgramInfoView alloc] initWithFrame:CGRectMake(0, 0, 300.0f, 300.0f)];
+        ProgramListModel * model = [[ProgramListModel alloc] init];
+        [model setValuesForKeysWithDictionary:self.dataArray[index]];
+        
+        ((ProgramInfoView *)view).programModel = model;
     }
-    else
-    {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
-    }
-    
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-    label.text = self.dataArray[index][@"author"];
-    
     return view;
 }
 
@@ -99,37 +80,11 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel placeholderViewAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
-    UILabel *label = nil;
     
-    //create new view if no view is available for recycling
     if (view == nil)
     {
-        //don't do anything specific to the index within
-        //this `if (view == nil) {...}` statement because the view will be
-        //recycled and used with other index values later
-        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200.0f, 200.0f)];
-        ((UIImageView *)view).image = [UIImage imageNamed:@"placeholder.png"];
-        view.contentMode = UIViewContentModeCenter;
-        
-        label = [[UILabel alloc] initWithFrame:view.bounds];
-        label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = UITextAlignmentCenter;
-        label.font = [label.font fontWithSize:50.0f];
-        label.tag = 1;
-        [view addSubview:label];
+        view = [[ProgramInfoView alloc] initWithFrame:CGRectMake(0, 0, 300.0f, 300.0f)];
     }
-    else
-    {
-        //get a reference to the label in the recycled view
-        label = (UILabel *)[view viewWithTag:1];
-    }
-    
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-    label.text = (index == 0)? @"[": @"]";
     
     return view;
 }
@@ -141,11 +96,12 @@
         _carousel = [[iCarousel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kBottomHeighSubLittle)];
         _carousel.dataSource = self;
         _carousel.delegate = self;
-        _carousel.type = iCarouselTypeCoverFlow2;
+        _carousel.type = iCarouselTypeInvertedCylinder;
         [self.view addSubview:_carousel];
     }
     return _carousel;
 }
+
 -(NSArray *)dataArray
 {
     if(_dataArray == nil){

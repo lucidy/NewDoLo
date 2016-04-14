@@ -37,6 +37,7 @@
 
 // Cell
 #import "PlayerTableViewCell.h"
+#import "ProgramInfoView.h"
 
 // Model
 #import "PlayerListModel.h"

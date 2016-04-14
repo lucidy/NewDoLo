@@ -62,6 +62,7 @@
 		82068B821CBF452A00E03312 /* LICENCE.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B7F1CBF452A00E03312 /* LICENCE.md */; };
 		82068B831CBF452A00E03312 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B801CBF452A00E03312 /* README.md */; };
 		82068B861CBF6F6300E03312 /* ProgramListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B851CBF6F6300E03312 /* ProgramListModel.m */; };
+		82068B891CBF7FBD00E03312 /* ProgramInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B881CBF7FBD00E03312 /* ProgramInfoView.m */; };
 		823F61EC1CBD30C900EBAE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F61EB1CBD30C900EBAE2A /* main.m */; };
 		823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F61CBD30C900EBAE2A /* Assets.xcassets */; };
 		823F61FA1CBD30C900EBAE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F81CBD30C900EBAE2A /* LaunchScreen.storyboard */; };
@@ -178,6 +179,8 @@
 		82068B801CBF452A00E03312 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82068B841CBF6F6300E03312 /* ProgramListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramListModel.h; sourceTree = "<group>"; };
 		82068B851CBF6F6300E03312 /* ProgramListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramListModel.m; sourceTree = "<group>"; };
+		82068B871CBF7FBD00E03312 /* ProgramInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramInfoView.h; sourceTree = "<group>"; };
+		82068B881CBF7FBD00E03312 /* ProgramInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramInfoView.m; sourceTree = "<group>"; };
 		823F61E71CBD30C900EBAE2A /* NewDoLo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDoLo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823F61EB1CBD30C900EBAE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		823F61F61CBD30C900EBAE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 			children = (
 				82068AB61CBDDC0500E03312 /* PlayerTableViewCell.h */,
 				82068AB71CBDDC0500E03312 /* PlayerTableViewCell.m */,
+				82068B871CBF7FBD00E03312 /* ProgramInfoView.h */,
+				82068B881CBF7FBD00E03312 /* ProgramInfoView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -782,6 +787,7 @@
 				82068B4B1CBE8B4200E03312 /* MKAnnotationView+WebCache.m in Sources */,
 				82068B561CBE8B4200E03312 /* UIImage+MultiFormat.m in Sources */,
 				82068B861CBF6F6300E03312 /* ProgramListModel.m in Sources */,
+				82068B891CBF7FBD00E03312 /* ProgramInfoView.m in Sources */,
 				82068B5A1CBE8B4200E03312 /* UIView+WebCacheOperation.m in Sources */,
 				82068B4E1CBE8B4200E03312 /* SDWebImageCompat.m in Sources */,
 				82068ACF1CBDDD2700E03312 /* PullTableView.m in Sources */,
