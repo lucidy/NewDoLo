@@ -8,6 +8,7 @@
 
 // 本类使用 NSURLSession 类实现下载功能,
 // 根据本App的需求, 暂时只提供Get方式请求数据
+
 #import <Foundation/Foundation.h>
 
 // Block回调返回处理结果

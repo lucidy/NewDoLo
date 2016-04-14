@@ -104,7 +104,6 @@
 
 - (void)twoBtnAction:(UIButton *)sender
 {
-    
     self.selectedIndex = sender.tag - 1;
 }
 
@@ -112,7 +111,6 @@
 {
     self.selectedIndex = sender.tag - 1;
 }
-
 
 #pragma mark ----重写selectedIndex属性的set方法
 
@@ -132,7 +130,6 @@
         // 需要将前一个button的图片改为普通状态的图片
         UIButton * previousButton = (UIButton *)[self.view viewWithTag:_selectedIndex + 1];
         [previousButton setBackgroundImage:[UIImage imageNamed:[self.nomalImageArray objectAtIndex:_selectedIndex]] forState:UIControlStateNormal];
-        
     }
     
     // 然后将新的aselectedIndex赋值给_selectedIndex
@@ -147,11 +144,8 @@
     if ([currentViewController isKindOfClass:[UINavigationController class]])
     {
         // 表示这个视图是navgationController
-        
         // 设置导航的代理
-        
         ((UINavigationController *)currentViewController).delegate = self;
-        
     }
     
     //设置当前视图的大小
@@ -159,12 +153,10 @@
     //添加到tab的view上
     [self.view addSubview:currentViewController.view];
     [self.view sendSubviewToBack:currentViewController.view];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 /*

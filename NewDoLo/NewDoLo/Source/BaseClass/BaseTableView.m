@@ -17,7 +17,6 @@
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     }
     return self;
-    
 }
 
 
