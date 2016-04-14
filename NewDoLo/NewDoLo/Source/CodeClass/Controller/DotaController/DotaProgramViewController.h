@@ -12,4 +12,5 @@
 @interface DotaProgramViewController : BaseListViewController
 @property(nonatomic,strong)NSString * playerID;
 @property(nonatomic,strong)iCarousel *carousel;
+@property(nonatomic,assign) BOOL reloadingFlag;
 @end

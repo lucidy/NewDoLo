@@ -13,7 +13,7 @@
 #define kDotaPlayerListURL @"http://api.dotaly.com/api/v1/authors?iap=0&ident=F5D9CA17-1E5C-4B19-8727-4C3A51B77596&jb=0"
 
 // 主播节目清单
-#define kDotaProgramListURL @"http://api.dotaly.com/api/v1/shipin/latest?author=%@&iap=0&ident=F5D9CA17-1E5C-4B19-8727-4C3A51B77596&jb=0&limit=%d"
-
+#define kDotaProgramListURL       @"http://api.dotaly.com/api/v1/shipin/latest?author=%@&iap=0&ident=F5D9CA17-1E5C-4B19-8727-4C3A51B77596&jb=0&limit=50"
+#define kDotaProgramListURLOffSet @"http://api.dotaly.com/api/v1/shipin/latest?author=%@&iap=0&ident=D0C9716C-247F-4B2D-BEFC-F586482D2A01&jb=0&limit=50&offset=%d"
 
 #endif

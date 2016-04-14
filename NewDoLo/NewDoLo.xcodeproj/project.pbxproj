@@ -56,8 +56,6 @@
 		82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B6E1CBF2ADE00E03312 /* BaseListViewController.m */; };
 		82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B711CBF40F800E03312 /* BaseCollectionView.m */; };
 		82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B741CBF412800E03312 /* DotaProgramViewController.m */; };
-		82068B791CBF44E600E03312 /* iCarouselExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */; };
-		82068B7A1CBF44E600E03312 /* iCarouselExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */; };
 		82068B811CBF452A00E03312 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82068B7E1CBF452A00E03312 /* iCarousel.m */; };
 		82068B821CBF452A00E03312 /* LICENCE.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B7F1CBF452A00E03312 /* LICENCE.md */; };
 		82068B831CBF452A00E03312 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82068B801CBF452A00E03312 /* README.md */; };
@@ -170,9 +168,6 @@
 		82068B711CBF40F800E03312 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
 		82068B731CBF412800E03312 /* DotaProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotaProgramViewController.h; sourceTree = "<group>"; };
 		82068B741CBF412800E03312 /* DotaProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotaProgramViewController.m; sourceTree = "<group>"; };
-		82068B761CBF44E600E03312 /* iCarouselExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarouselExampleViewController.h; sourceTree = "<group>"; };
-		82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarouselExampleViewController.m; sourceTree = "<group>"; };
-		82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iCarouselExampleViewController.xib; sourceTree = "<group>"; };
 		82068B7D1CBF452A00E03312 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		82068B7E1CBF452A00E03312 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		82068B7F1CBF452A00E03312 /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
@@ -358,9 +353,6 @@
 		82068B5B1CBF28FD00E03312 /* DotaController */ = {
 			isa = PBXGroup;
 			children = (
-				82068B761CBF44E600E03312 /* iCarouselExampleViewController.h */,
-				82068B771CBF44E600E03312 /* iCarouselExampleViewController.m */,
-				82068B781CBF44E600E03312 /* iCarouselExampleViewController.xib */,
 				82068B5C1CBF28FD00E03312 /* DotaPlayerListViewController.h */,
 				82068B5D1CBF28FD00E03312 /* DotaPlayerListViewController.m */,
 				82068B731CBF412800E03312 /* DotaProgramViewController.h */,
@@ -683,7 +675,6 @@
 				823F62511CBD35AB00EBAE2A /* location@2x.png in Resources */,
 				823F623D1CBD35AB00EBAE2A /* tabbar_button_centeradd.png in Resources */,
 				82068AD41CBDDD2700E03312 /* grayArrow.png in Resources */,
-				82068B7A1CBF44E600E03312 /* iCarouselExampleViewController.xib in Resources */,
 				823F61F71CBD30C900EBAE2A /* Assets.xcassets in Resources */,
 				82068AB01CBD43E700E03312 /* SVProgressHUD.bundle in Resources */,
 				823F624C1CBD35AB00EBAE2A /* kind@2x.png in Resources */,
@@ -753,7 +744,6 @@
 				82068B551CBE8B4200E03312 /* UIImage+GIF.m in Sources */,
 				82068B751CBF412800E03312 /* DotaProgramViewController.m in Sources */,
 				82068B6F1CBF2ADE00E03312 /* BaseListViewController.m in Sources */,
-				82068B791CBF44E600E03312 /* iCarouselExampleViewController.m in Sources */,
 				82068ACC1CBDDD2700E03312 /* EGORefreshTableHeaderView.m in Sources */,
 				823F62121CBD313D00EBAE2A /* AppDelegate.m in Sources */,
 				82068B721CBF40F800E03312 /* BaseCollectionView.m in Sources */,
@@ -901,7 +891,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NewDoLo/NewDoLo.pch";
 				INFOPLIST_FILE = NewDoLo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucidy.NewDoLo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -919,7 +909,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NewDoLo/NewDoLo.pch";
 				INFOPLIST_FILE = NewDoLo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucidy.NewDoLo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
