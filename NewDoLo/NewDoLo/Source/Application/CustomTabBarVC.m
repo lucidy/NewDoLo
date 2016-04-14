@@ -14,6 +14,10 @@
 #define KWidthScreen [UIScreen mainScreen].bounds.size.width
 #define KheightScreen [UIScreen mainScreen].bounds.size.height
 
+#define kBottomHeigh 50
+#define kBottomHeighSubLittle 40
+#define kGap 10
+
 @interface CustomTabBarVC () <UINavigationControllerDelegate>
 
 @end
@@ -49,38 +53,38 @@
     [self viewdidControl];
     
     // 定义一个底部视图, 这个视图控制器上面将挂载一些button.
-    self.customView = [[UIView alloc] initWithFrame:CGRectMake(0, KheightScreen - 80, KWidthScreen, 80)];
+    self.customView = [[UIView alloc] initWithFrame:CGRectMake(0, KheightScreen - kBottomHeigh, KWidthScreen, kBottomHeigh)];
     self.customView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.customView];
     
     // 未点击button效果
-    self.nomalImageArray = [[NSArray alloc] initWithObjects:@"tabbar_button_centeradd.png",@"tabbar_button_centeradd.png",@"tabbar_button_centeradd.png", nil];
+    self.nomalImageArray = [[NSArray alloc] initWithObjects:@"tabBar_dota.png",@"tabBar_lol.png",@"tabBar_mine.png", nil];
     
     // 点击button后效果
-    self.hightlightedImageArray = [[NSArray alloc]initWithObjects:@"tabbar_button_centeradd.png",@"tabbar_button_centeradd.png",@"tabbar_button_centeradd.png",nil];
+    self.hightlightedImageArray = [[NSArray alloc]initWithObjects:@"tabBar_dota.png",@"tabBar_lol.png",@"tabBar_mine.png",nil];
     
     // 设置tabbar的底片, 因为button的图片是镂空的,
-    self.customImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 20, KWidthScreen, 60)];
+    self.customImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, kBottomHeigh -kBottomHeighSubLittle , KWidthScreen, kBottomHeighSubLittle)];
     [self.customImageView setImage:[UIImage imageNamed:@"tabbar_background.png"]];
     [self.customView addSubview:self.customImageView];
     
     // 设置button的背景图片
     // OneBtn
-    // 注意除了第三个button, 其他的button都是从y坐标的20处开始的. 中间的button是从0开始.
-    self.oneBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, KWidthScreen / 3.0, 60)];
-    [self.oneBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_button_centeradd.png"] forState:UIControlStateNormal];
+    // 注意除了第三个button, 其他的button都是从y坐标的10处开始的. 中间的button是从0开始.
+    self.oneBtn = [[UIButton alloc] initWithFrame:CGRectMake(kGap, kBottomHeigh -kBottomHeighSubLittle, (KWidthScreen - 6*kGap)/3.0, kBottomHeighSubLittle)];
+    [self.oneBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_dota.png"] forState:UIControlStateNormal];
     self.oneBtn.tag = 1;
     [self.customView addSubview:self.oneBtn];
     
     // TwoBtn
-    self.twoBtn = [[UIButton alloc] initWithFrame:CGRectMake(2 * KWidthScreen / 3.0 , 20, (KWidthScreen) / 3, 60)];
-    [self.twoBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_button_centeradd.png"] forState:UIControlStateNormal];
+    self.twoBtn = [[UIButton alloc] initWithFrame:CGRectMake(2 * KWidthScreen / 3.0 , kBottomHeigh -kBottomHeighSubLittle, (KWidthScreen) / 3, kBottomHeighSubLittle)];
+    [self.twoBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_lol.png"] forState:UIControlStateNormal];
     self.twoBtn.tag = 2;
     [self.customView addSubview:self.twoBtn];
     
     // ThreeOne
-    self.threeBtn = [[UIButton alloc]initWithFrame:CGRectMake(KWidthScreen/3.0, 0, (KWidthScreen) / 3, 80)];
-    [self.threeBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_button_centeradd.png"] forState:UIControlStateNormal];
+    self.threeBtn = [[UIButton alloc]initWithFrame:CGRectMake(KWidthScreen/3.0, 0, (KWidthScreen) / 3, kBottomHeigh)];
+    [self.threeBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_mine.png"] forState:UIControlStateNormal];
     self.threeBtn.tag = 3;
     [self.customView addSubview:self.threeBtn];
     

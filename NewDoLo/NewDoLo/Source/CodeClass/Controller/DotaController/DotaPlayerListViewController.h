@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DotaPlayerListViewController : UIViewController
-
+@interface DotaPlayerListViewController : BaseListViewController
+{
+    UIImageView     *backgroundImgView;     // 设置navigation的背景图
+}
 @end

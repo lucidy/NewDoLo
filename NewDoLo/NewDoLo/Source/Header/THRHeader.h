@@ -10,8 +10,8 @@
 #define Project_IMPHeader_h
 
 // SDAutoLayout头文件
-#import "UITableView+SDAutoTableViewCellHeight.h"
 #import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
 
 // MJRefresh
 #import "MJRefresh.h"
