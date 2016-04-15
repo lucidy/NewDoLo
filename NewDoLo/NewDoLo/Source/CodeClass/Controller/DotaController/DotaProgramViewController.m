@@ -10,22 +10,24 @@
 
 @interface DotaProgramViewController ()<iCarouselDataSource, iCarouselDelegate>
 @property(nonatomic,strong)NSMutableArray * dataArray;
+@property(nonatomic,assign)NSInteger offset;
 @end
 
 @implementation DotaProgramViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // 修改导航栏Item
+    
+    // 每次加载刷新偏移量
+    _offset = 50;
     
     // 请求数据
-    NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURL,self.playerID,50];
+    NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURL,self.playerID];
     [kGetDataTool requestDataByGetWithURL:URLStr Anticipation:^{
         [SVProgressHUD showWithStatus:@"正在加载..." maskType:SVProgressHUDMaskTypeGradient];
     } Completion:^(BOOL isSuccess, NSDictionary *dict) {
         if (isSuccess) {
-                    self.dataArray = dict[@"videos"];
+            [self.dataArray addObjectsFromArray:dict[@"videos"]];
             // 回到主线程修改UI
             dispatch_async(dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];
@@ -64,11 +66,22 @@
     if (view == nil)
     {
         view = [[ProgramInfoView alloc] initWithFrame:CGRectMake(0, 0, 300.0f, 300.0f)];
-        ProgramListModel * model = [[ProgramListModel alloc] init];
-        [model setValuesForKeysWithDictionary:self.dataArray[index]];
-        
-        ((ProgramInfoView *)view).programModel = model;
     }
+    
+    // 设置UIView上的属性的时候, 要把设置代码放到 if(view == nil) {...}的外面.
+    ProgramListModel * model = [[ProgramListModel alloc] init];
+    [model setValuesForKeysWithDictionary:self.dataArray[index]];
+    
+    ((ProgramInfoView *)view).programModel = model;
+    
+    
+    // !!!!!!!!!! 被这句话坑惨了!!!! 没注意这句注释!!!哔了狗了!!!!!!
+    //set item label
+    //remember to always set any properties of your carousel item
+    //views outside of the `if (view == nil) {...}` check otherwise
+    //you'll get weird issues with carousel item content appearing
+    //in the wrong place in the carousel
+
     return view;
 }
 
@@ -80,6 +93,24 @@
 
 - (UIView *)carousel:(__unused iCarousel *)carousel placeholderViewAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
+    if (index != 0) {
+        // 加载更多数据并且刷新
+        NSString * URLStr = [NSString stringWithFormat:kDotaProgramListURLOffSet,self.playerID,_offset];
+        [kGetDataTool requestDataByGetWithURL:URLStr Anticipation:^{
+            [SVProgressHUD showWithStatus:@"正在加载..." maskType:SVProgressHUDMaskTypeGradient];
+        } Completion:^(BOOL isSuccess, NSDictionary *dict) {
+            if (isSuccess && dict[@"videos"] > 0) {
+                [self.dataArray addObjectsFromArray:dict[@"videos"]];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [SVProgressHUD dismiss];
+                    [self.carousel reloadData];
+                });
+                _offset += 50;
+            }else{
+                NSLog(@"数据请求失败");
+            }
+        }];
+    }
     
     if (view == nil)
     {
@@ -87,6 +118,54 @@
     }
     
     return view;
+}
+
+- (CATransform3D)carousel:(__unused iCarousel *)carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform
+{
+    //implement 'flip3D' style carousel
+    transform = CATransform3DRotate(transform, M_PI / 8.0f, 0.0f, 1.0f, 0.0f);
+    return CATransform3DTranslate(transform, 0.0f, 0.0f, offset * self.carousel.itemWidth);
+}
+
+- (CGFloat)carousel:(__unused iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
+{
+    //customize carousel display
+    switch (option)
+    {
+        case iCarouselOptionWrap:
+        {
+            //normally you would hard-code this to YES or NO
+            return NO;
+        }
+        case iCarouselOptionSpacing:
+        {
+            //add a bit of spacing between the item views
+            return value * 1.05f;
+        }
+        case iCarouselOptionFadeMax:
+        {
+            if (self.carousel.type == iCarouselTypeCustom)
+            {
+                //set opacity based on distance from camera
+                return 0.0f;
+            }
+            return value;
+        }
+        case iCarouselOptionShowBackfaces:
+        case iCarouselOptionRadius:
+        case iCarouselOptionAngle:
+        case iCarouselOptionArc:
+        case iCarouselOptionTilt:
+        case iCarouselOptionCount:
+        case iCarouselOptionFadeMin:
+        case iCarouselOptionFadeMinAlpha:
+        case iCarouselOptionFadeRange:
+        case iCarouselOptionOffsetMultiplier:
+        case iCarouselOptionVisibleItems:
+        {
+            return value;
+        }
+    }
 }
 
 // !!!: 懒加载
@@ -102,22 +181,22 @@
     return _carousel;
 }
 
--(NSArray *)dataArray
+-(NSMutableArray *)dataArray
 {
     if(_dataArray == nil){
-        _dataArray = [NSArray array];
+        _dataArray = [NSMutableArray array];
     }
     return _dataArray;
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
